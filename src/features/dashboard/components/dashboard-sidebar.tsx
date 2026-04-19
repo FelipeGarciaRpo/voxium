@@ -174,7 +174,7 @@ export function DashboardSidebar() {
   <div className="absolute inset-0 rounded-md bg-gradient-to-tr from-primary/20 to-transparent pointer-events-none" />
 </div>
             <span className="group-data-[collapsible=icon]:hidden bg-gradient-to-br from-foreground to-foreground/70 bg-clip-text text-lg font-semibold tracking-tighter text-transparent">
-              Resonance
+              Voxium Mind
             </span>
             <SidebarTrigger className="ml-auto lg:hidden" />
           </div>
