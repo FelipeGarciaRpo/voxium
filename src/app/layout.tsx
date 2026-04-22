@@ -5,6 +5,7 @@ import "./globals.css";
 import { Providers } from "./providers";
 import { TRPCReactProvider } from "@/trpc/client";
 import { ClerkProvider } from "@clerk/nextjs";
+import { NuqsAdapter } from "nuqs/adapters/next/app";
 
 const inter = Inter({
   variable: "--font-geist-sans",
@@ -36,10 +37,12 @@ export default function RootLayout({
           <body
             className={`${inter.variable} ${geistMono.variable} antialiased`}
           >
+            <NuqsAdapter>
             <Providers>
               {children}
               <Toaster />
             </Providers>
+            </NuqsAdapter>
           </body>
         </html>
       </TRPCReactProvider>
